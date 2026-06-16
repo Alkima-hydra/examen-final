@@ -1,0 +1,37 @@
+name: Deploy pagina a S3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "app/**"
+
+jobs:
+  deploy-web:
+    name: Sync app/ a S3
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar credenciales AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy a S3
+        run: |
+          aws s3 sync app/ s3://${{ secrets.S3_BUCKET_WEB }}/ \
+            --exclude "Dockerfile" \
+            --exclude ".dockerignore" \
+            --exclude "*.md" \
+            --delete
+
+      - name: URL del sitio
+        run: |
+          echo "Web publicada en:"
+          echo "http://${{ secrets.S3_BUCKET_WEB }}.s3-website-us-east-1.amazonaws.com"
