@@ -1,4 +1,4 @@
-# Lab 1 — Carpeta `app/` (Web del Mundial)
+# Lab 1 — Carpeta `app/` (Web del Mundial) - para probar
 
 Esta misma carpeta se usa en **varios labs**. Léela completa antes de empezar.
 
