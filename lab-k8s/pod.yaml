@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: mundial-web
-      image: mundial-web:tu-nombre   # ← reemplaza "tu-nombre" por tu apellido
+      image: mundial-web:retamozo
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 80
