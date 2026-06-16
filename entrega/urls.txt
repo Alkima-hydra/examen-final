@@ -1,4 +1,4 @@
 Repo GitHub:
-S3 web (Lab 2):
-API Gateway base (Lab 3):
-Kubernetes puerto 30080 (Lab 4):
+S3 web (Lab 2): http://mundial-web-retamozo.s3-website-us-east-1.amazonaws.com/
+API Gateway base (Lab 3): https://7ol9i662sa.execute-api.us-east-1.amazonaws.com/prod/poleras
+Kubernetes puerto 30080 (Lab 4): http://localhost:30080/
