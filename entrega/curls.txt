@@ -1,10 +1,122 @@
 # Pegar aquí la salida de los 3 curl del Lab 3
 
 ## GET /poleras
+PS C:\Users\IGNACIO\Downloads\mundial-cloud-main\examen-final> curl https://7ol9i662sa.execute-api.us-east-1.amazonaws.com/prod/poleras
+                                                                                                                    
+Advertencia de seguridad: riesgo de ejecución de script                                                             
+Invoke-WebRequest analiza el contenido de la página web. El código de script de la página web se puede ejecutar     
+cuando se analiza la página.                                                                                        
+      ACCIÓN RECOMENDADA:
+      Usa el modificador -UseBasicParsing para evitar la ejecución de código de script.
 
+      ¿Quieres continuar?
+    
+[S] Sí  [O] Sí a todo  [N] No  [T] No a todo  [U] Suspender  [?] Ayuda (el valor predeterminado es "N"): s
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"poleras":[{"archivo":"argentina.svg","url":"https://mundial-poleras-retamozo.s3.amazonaws.com
+                    /poleras/argentina.svg"},{"archivo":"brasil.svg","url":"https://mundial-poleras-retamozo.s3.ama
+                    zonaws.com...
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    access-control-allow-origin: *
+                    Apigw-Requestid: fE4K4hsbIAMEaCQ=
+                    Content-Length: 437
+                    Content-Type: application/json
+                    Date: Tue, 16 Jun 2026 22:53:19 GMT
+                    
+                    ...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [access-control-allow-origin, *], [Apigw-Requestid, 
+                    fE4K4hsbIAMEaCQ=], [Content-Length, 437]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 437
 
 ## GET /partidos
+PS C:\Users\IGNACIO\Downloads\mundial-cloud-main\examen-final> curl https://7ol9i662sa.execute-api.us-east-1.amazonaws.com/prod/partidos
 
+Advertencia de seguridad: riesgo de ejecución de script
+Invoke-WebRequest analiza el contenido de la página web. El código de script de la página web se puede ejecutar 
+cuando se analiza la página.
+      ACCIÓN RECOMENDADA:
+      Usa el modificador -UseBasicParsing para evitar la ejecución de código de script.
+
+      ¿Quieres continuar?
+    
+[S] Sí  [O] Sí a todo  [N] No  [T] No a todo  [U] Suspender  [?] Ayuda (el valor predeterminado es "N"): si
+[S] Sí  [O] Sí a todo  [N] No  [T] No a todo  [U] Suspender  [?] Ayuda (el valor predeterminado es "N"): si
+[S] Sí  [O] Sí a todo  [N] No  [T] No a todo  [U] Suspender  [?] Ayuda (el valor predeterminado es "N"): s
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"partidos":[{"local":"MÃ©xico","visitante":"SudÃ¡frica","estadio":"Estadio Azteca","id":"parti
+                    do-001","fecha":"2026-06-11\t","grupo":"A"},{"local":"Brasil","visitante":"Marruecos","estadio"
+                    :"MetLife ...
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    access-control-allow-origin: *
+                    Apigw-Requestid: fE4PdhjPoAMEasw=
+                    Content-Length: 519
+                    Content-Type: application/json
+                    Date: Tue, 16 Jun 2026 22:53:49 GMT
+                    
+                    ...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [access-control-allow-origin, *], [Apigw-Requestid, 
+                    fE4PdhjPoAMEasw=], [Content-Length, 519]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 519
+
+
+
+PS C:\Users\IGNACIO\Downloads\mundial-cloud-main\examen-final> 
 
 ## GET /partidos/partido-001
+PS C:\Users\IGNACIO\Downloads\mundial-cloud-main\examen-final> curl https://7ol9i662sa.execute-api.us-east-1.amazonaws.com/prod/partidos/partido-001 
+
+Advertencia de seguridad: riesgo de ejecución de script
+Invoke-WebRequest analiza el contenido de la página web. El código de script de la página web se puede ejecutar 
+cuando se analiza la página.
+      ACCIÓN RECOMENDADA:
+      Usa el modificador -UseBasicParsing para evitar la ejecución de código de script.
+
+      ¿Quieres continuar?
+    
+[S] Sí  [O] Sí a todo  [N] No  [T] No a todo  [U] Suspender  [?] Ayuda (el valor predeterminado es "N"): s
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"local":"MÃ©xico","id":"partido-001","fecha":"2026-06-11\t","visitante":"SudÃ¡frica","estadio"
+                    :"Estadio Azteca","grupo":"A"}
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    access-control-allow-origin: *
+                    Apigw-Requestid: fE4UvgcpIAMESwA=
+                    Content-Length: 125
+                    Content-Type: application/json
+                    Date: Tue, 16 Jun 2026 22:54:23 GMT
+                    
+                    ...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [access-control-allow-origin, *], [Apigw-Requestid, 
+                    fE4UvgcpIAMESwA=], [Content-Length, 125]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 125
+
+
+
+
 
